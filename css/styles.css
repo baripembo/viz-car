@@ -4,7 +4,7 @@
   grid-gap: 30px;
   grid-template-rows: auto;
   margin: 0 auto;
-  max-width: 1170px; }
+  max-width: 900px; }
   .grid-container.center--vertical {
     align-items: center; }
 
@@ -172,6 +172,9 @@ hr {
   vertical-align: -4px;
   width: 16px; }
 
+article {
+  margin: 50px 0; }
+
 .slideshow {
   margin-left: 24px;
   margin-top: 40px; }
@@ -202,15 +205,8 @@ hr {
 
 footer {
   background-color: #353535;
-  border-top: 1px solid #CCC;
   color: #FFF;
-  padding-top: 20px;
-  width: 100%; }
-  footer .inner {
-    margin: 0 auto;
-    max-width: 1024px; }
-  footer .inner-container > *:first-child {
-    width: 60%; }
+  padding: 50px 0; }
 
 .stats {
   list-style-type: none;
@@ -241,12 +237,21 @@ footer {
     .logos div > *:first-child {
       margin-left: auto; }
 
+.title {
+  text-align: center; }
+
 h1 {
   color: #FFF;
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
   margin: 10px 0 20px; }
+
+h2 {
+  border-top: 1px solid #666;
+  display: inline-block;
+  font-style: italic;
+  padding: 20px 50px 0; }
 
 h3 {
   font-size: 18px;
@@ -278,11 +283,10 @@ label {
   color: #FFF;
   text-transform: uppercase; }
 
-hr {
-  border: 1px solid #D8D8D8; }
-
-img {
-  margin-bottom: 20px; }
+.placeholder {
+  background-color: #CCC;
+  height: 300px;
+  margin: 20px 0; }
 
 @media only screen and (max-width: 600px) {
   #map {

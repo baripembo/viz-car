@@ -32,10 +32,12 @@ $( document ).ready(function() {
     if (narrative.scrollTop() > articlePosition) {
       $('#map').addClass('unpin');
       $('#map').css('height', $(window).height());
+      $('footer').show();
     }
     else {
       $('#map').removeClass('unpin');
       $('#map').css('height', 'auto');
+      $('footer').hide();
     }
     
     //detect current section in view
