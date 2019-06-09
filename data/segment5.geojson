@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "method": "walking",
+        "length": 2.3,
+        "surface": "",
+        "name": "section5"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            21.9911527633667,
+            6.536928139384136
+          ],
+          [
+            21.986088752746582,
+            6.539486313130548
+          ],
+          [
+            21.98814868927002,
+            6.542215017361572
+          ],
+          [
+            21.989049911499023,
+            6.55359866947553
+          ]
+        ]
+      }
+    }
+  ]
+}
