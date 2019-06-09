@@ -2,6 +2,7 @@
   "name": "viz-car",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/baripembo/viz-car.git",
   "main": " ",
   "scripts": {
     "start": "http-server ./dist -c-1 -p 3000",
@@ -20,7 +21,9 @@
     "build:js": "npm run concat:js && browserify -t browserify-css ./app.js | uglifyjs > dist/js/bundle.js",
     "build:assets": "mkdir -p dist/assets && cp -r src/assets/ dist/assets/",
     "prebuild": "rm -rf ./dist",
-    "build": "npm-run-all --parallel build:*"
+    "build": "npm-run-all --parallel build:*",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Erika Wei",
   "license": "ISC",
@@ -28,6 +31,7 @@
     "browserify": "^16.2.3",
     "browserify-css": "^0.15.0",
     "concat": "^1.0.3",
+    "gh-pages": "^2.0.1",
     "http-server": "^0.11.1",
     "jquery": "^3.4.1",
     "node-sass": "^4.12.0",
