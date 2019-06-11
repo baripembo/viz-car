@@ -54,7 +54,6 @@ $( document ).ready(function() {
 
 
   function showArticle() {
-    console.log(window.innerHeight);
     $('#map').css('position', 'relative');
     $('#map').css('height', window.innerHeight);
   }
@@ -94,7 +93,10 @@ $( document ).ready(function() {
       let padding = 100;
       setMapBounds(geoDataArray[currentIndex], padding);
 
-      if (currentIndex==0) animateLine();
+      if (animationDone) {
+        animateLine();
+        animationDone = false;
+      }
     }
     
     // highlight the current section
@@ -226,6 +228,7 @@ $( document ).ready(function() {
 
   let animation; // to store and cancel the animation
   let animationIndex = 0;
+  let animationDone = true;
   function animateLine() {
     let geoData = geoDataArray[animationIndex];
     let layer = 'layer'+animationIndex;
@@ -242,8 +245,9 @@ $( document ).ready(function() {
       });
     }
     else {
+      animationDone = true;
       animationIndex++;
-      animateLine();
+      if (currentIndex>=animationIndex) animateLine();
     }
   }
 
