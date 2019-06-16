@@ -1,0 +1,83 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Galabadja, Bangui"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5434627532959,
+          4.41367716120559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bangui Central Mosque"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.538055419921875,
+          4.37900731600158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sibut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0867,
+          5.7378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bornou Mosque IDP Site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.682063102722168,
+          5.763079465859658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PK3 IDP Site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.991447806358337,
+          6.537258570895912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bornou neighborhood"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.98937177658081,
+          6.553342859920623
+        ]
+      }
+    }
+  ]
+}
