@@ -233,7 +233,7 @@ $( document ).ready(function() {
     let geoData = geoDataArray[animationIndex];
     let layer = 'layer'+animationIndex;
     let count = countArray[animationIndex];
-    if (count<geoData.features[0].geometry.coordinates.length) {
+    if (geoData!=undefined && count<geoData.features[0].geometry.coordinates.length) {
       let count = countArray[animationIndex]++;
       let newGeo = map.getSource(layer)._data;
       newGeo.features[0].geometry.coordinates.push(geoData.features[0].geometry.coordinates[count]);
