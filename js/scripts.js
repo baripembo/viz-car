@@ -21,12 +21,12 @@ $( document ).ready(function() {
     let articlePosition = sectionsHeight-$('article').outerHeight()-narrative.outerHeight();
 
     //show ticker
-    if (narrative.scrollTop() >= $('.hero').outerHeight() && narrative.scrollTop() < articlePosition) {
-      $('.ticker').addClass('active');
-    }
-    else {
-      $('.ticker').removeClass('active');
-    }
+    // if (narrative.scrollTop() >= $('.hero').outerHeight() && narrative.scrollTop() < articlePosition) {
+    //   $('.ticker').addClass('active');
+    // }
+    // else {
+    //   $('.ticker').removeClass('active');
+    // }
 
     //show article
     if (narrative.scrollTop() > articlePosition) {
@@ -81,15 +81,6 @@ $( document ).ready(function() {
 
     //fit map to bounds of current section
     if (geoDataArray[currentIndex]!==undefined) {
-    //   let padding = {};
-    //   switch(currentIndex) {
-    //     case 4:
-    //       padding = 120;
-    //       break;
-    //     default:
-    //       padding = 100;
-    //   }
-
       let padding = 100;
       setMapBounds(geoDataArray[currentIndex], padding);
 
@@ -141,7 +132,7 @@ $( document ).ready(function() {
       attributionControl: false
     });
 
-    map.addControl(new mapboxgl.AttributionControl(), 'top-right');
+    map.addControl(new mapboxgl.AttributionControl(), 'bottom-right');
 
     //disable scrolling map zoom
     map.scrollZoom.disable();

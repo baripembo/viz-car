@@ -26,7 +26,7 @@
 .col-12 {
   grid-column: span 12; }
 
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 767px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
@@ -284,73 +284,24 @@ label {
   color: #FFF;
   text-transform: uppercase; }
 
-.placeholder {
-  background-color: #CCC;
-  height: 300px;
-  margin: 20px 0; }
+.video-container video {
+  height: auto;
+  margin: 20px 0;
+  width: 100%; }
 
-@media only screen and (max-width: 600px) {
-  #map {
-    top: auto;
-    height: 50%; }
-  #narrative {
-    border-bottom: 1px solid #CCC;
-    bottom: auto;
-    height: 50%; }
+@media only screen and (max-width: 767px) {
+  .hero .container {
+    width: 85%; }
   .main section {
-    background-color: white;
-    padding: 20px;
-    width: 100%; }
-  .arrow {
-    display: none; }
-  .photo-credit {
-    left: 0;
-    position: relative; }
-  .overlay {
-    height: 100%;
-    min-height: 0; }
-  .hero {
-    background-position: top center;
-    background-attachment: scroll;
+    align-self: center;
     height: auto;
-    min-height: 0;
-    overflow-y: none;
-    -webkit-overflow-scrolling: none; }
-    .hero .container {
-      position: relative;
-      padding-top: 20px;
-      top: 0;
-      left: 0;
-      transform: none; }
-    .hero .header {
-      margin: 0 20px;
-      padding-top: 0; }
-  .ticker p {
-    font-size: 17px; }
-  .slideshow {
-    margin-left: 0; }
-    .slideshow .slick-slide img {
-      margin-bottom: 0; }
-    .slideshow .slick-dots {
-      bottom: -25px; }
-  .slick-prev:before, .slick-next:before {
-    display: none; }
-  h1 {
-    font-size: 26px;
-    line-height: 30px; }
-  footer .inner-container {
-    flex-flow: column; }
-    footer .inner-container > *:first-child {
-      margin: 0;
-      padding: 0 20px;
-      width: 100%; }
-  .logos div > *:first-child {
-    margin-left: 0; }
-  .stats {
-    padding-left: 20px;
-    text-align: left;
-    width: 100%; } }
-
-@media only screen and (max-width: 365px) {
-  .ticker p {
-    font-size: 14px; } }
+    margin-right: 0;
+    width: 85%; }
+  article p {
+    padding-right: 20px;
+    padding-left: 20px; }
+  img.full-width {
+    height: auto;
+    width: 100%; }
+  footer {
+    padding: 50px 20px; } }
