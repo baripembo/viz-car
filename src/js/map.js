@@ -9,6 +9,8 @@ $( document ).ready(function() {
   let tickerArray = new Array(dataUrls.length);
   let map;
 
+  $('.step').css('marginBottom', $(window).height());
+
   let narrative = $('#narrative'),
     sections = narrative.find('section'),
     currentSection = '';
