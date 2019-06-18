@@ -131,11 +131,11 @@ hr {
 		background-color: rgba(0, 0, 0, 0.6);
 		color: #FFF;
 		align-self: flex-end;
-		padding: 30px;
+		padding: 15px 25px;
 		margin-right: 50px;
 		margin-bottom: 300px;
-		height: 300px;
-		width: 40%;
+		height: auto;
+		width: 32%;
 		img {
 			width: 100%;
 		}
@@ -302,7 +302,6 @@ label {
 	.main {
 		section {
 			align-self: center;
-			height: auto;
 			margin-right: 0;
 			width: 85%;
 		}
