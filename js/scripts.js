@@ -95,6 +95,7 @@ $( document ).ready(function() {
       sections[i].className = sections[i].id === newSection ? 'active' : '';
     }
     currentSection = newSection;
+    map.setLayoutProperty('locationPoints', 'visibility', 'visible');
   }
 
 
@@ -139,7 +140,7 @@ $( document ).ready(function() {
     map.doubleClickZoom.disable();
 
     //add icon images
-    let iconArray = ['icon_circle'];
+    let iconArray = ['icon_start', 'icon_middle'];
     iconArray.forEach(function(imageName) {
       map.loadImage(DATA_URL+'assets/icons/'+imageName+'.png', function(error, image) {
         map.addImage(imageName, image);
@@ -165,18 +166,21 @@ $( document ).ready(function() {
       'type': 'symbol',
       'source': 'locationSource',
       'layout': {
-        'icon-image': 'icon_circle',
-        'icon-offset': { 'type': 'identity', 'property': 'iconOffset' },
+        'visibility': 'none',
+        'icon-image': '{icon}',
+        'icon-size': { 'type': 'identity', 'property': 'iconSize' },
         'text-field': '{name}',
         'text-font': ['PT Sans Bold Italic', 'Arial Unicode MS Bold'],
-        'text-size': 12,
+        'text-size': 13,
+        'text-max-width': 8,
+        'text-justify': 'left',
         'text-offset': { 'type': 'identity', 'property': 'textOffset' },
         'text-anchor': { 'type': 'identity', 'property': 'textAnchor' },
-        'icon-allow-overlap': true,
-        'text-allow-overlap': true
+        'icon-allow-overlap': false,
+        'text-allow-overlap': false
       },
       paint: {
-        "text-color": "#FFF"
+        'text-color': '#FFF'
       }
     });
   }

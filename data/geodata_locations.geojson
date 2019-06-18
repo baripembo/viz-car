@@ -4,7 +4,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Galabadja, Bangui"
+        "name": "Galabadja, Bangui",
+        "icon": "icon_start",
+        "iconSize": 1,
+        "textAnchor": "left",
+        "textOffset": [1, 0]
       },
       "geometry": {
         "type": "Point",
@@ -17,7 +21,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bangui Central Mosque"
+        "name": "Bangui Central Mosque",
+        "icon": "icon_middle",
+        "iconSize": 0.75,
+        "textAnchor": "left",
+        "textOffset": [1, 0]
       },
       "geometry": {
         "type": "Point",
@@ -30,7 +38,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Sibut"
+        "name": "Sibut",
+        "icon": "icon_middle",
+        "iconSize": 0.75,
+        "textAnchor": "right",
+        "textOffset": [-1, 0]
       },
       "geometry": {
         "type": "Point",
@@ -43,7 +55,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bornou Mosque IDP Site"
+        "name": "Bornou Mosque IDP Site",
+        "icon": "icon_middle",
+        "iconSize": 0.75,
+        "textAnchor": "left",
+        "textOffset": [-0.5, 2]
       },
       "geometry": {
         "type": "Point",
@@ -56,7 +72,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "PK3 IDP Site"
+        "name": "PK3 IDP Site",
+        "icon": "icon_middle",
+        "iconSize": 0.75,
+        "textAnchor": "left",
+        "textOffset": [1, 0]
       },
       "geometry": {
         "type": "Point",
@@ -69,7 +89,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bornou neighborhood"
+        "name": "Bornou neighborhood",
+        "icon": "icon_middle",
+        "iconSize": 0.75,
+        "textAnchor": "left",
+        "textAnchor": "right",
+        "textOffset": [-1, 0]
       },
       "geometry": {
         "type": "Point",
