@@ -34,7 +34,6 @@ body {
 }
 
 .hero {
-	//background: url(../assets/feature.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -197,15 +196,16 @@ article {
 footer {
 	background-color: #353535;
 	color: #FFF;
-	padding: 50px 0;
+	padding: 20px 0 0;
+	.grid-container > div {
+		padding: 0 20px;
+	}
 }
 
 .stats {
   list-style-type: none;
 	padding: 0;
-	margin-right: 20px;
 	text-align: right;
-	width: 40%;
 	li {
 		padding-bottom: 20px;
 	}
@@ -224,15 +224,8 @@ footer {
 		margin-bottom: 0;
 		width: auto;
 	}
-	div {
-		display: flex;
-		flex-flow: row;
-		margin: 0 auto;
-		max-width: 1024px;
-		padding-right: 20px;
-		> *:first-child {
-			margin-left: auto;
-		}
+	.grid-container > div {
+		text-align: right;
 	}
 }
 
@@ -262,6 +255,7 @@ h4 {
 	font-size: 15px;
 	line-height: 20px;
 	margin-top: 4px;
+	margin-bottom: 10px;
 }
 p {
 	margin: 0;
@@ -278,18 +272,16 @@ a {
 	color: #888;
 	font-size: 11px;
 	line-height: 13px;
-	padding: 0 20px;
+	padding: 0;
 }
 label {
 	color: #FFF;
 	text-transform: uppercase;
 }
-.video-container {
-	video {
-		height: auto;
-		margin: 20px 0;
-		width: 100%;
-	}
+video {
+	height: auto;
+	margin: 20px 0;
+	width: 100%;
 }
 
 
@@ -314,7 +306,16 @@ label {
 		height: auto;
 		width: 100%;
 	}
-	footer {
-		padding: 50px 20px;
+	.stats {
+		text-align: left;
+	}
+	.logos {
+		.grid-container > div {
+			padding: 0;
+			text-align: center;
+		}
+		img {
+			margin: 10px;
+		}
 	}
 }

@@ -4,19 +4,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "section2a",
-        "length": null,
-        "method": null,
-        "surface": null,
-        "osm_id": null,
-        "highway": null,
-        "smoothness": null,
-        "width": null,
-        "lanes": null,
-        "oneway": null,
-        "bridge": null,
-        "layer": null,
-        "z_index": null
+        "name": "section2",
+        "ticker":"Section 2: X steps walked. X km. X days."
       },
       "geometry": {
         "type": "LineString",

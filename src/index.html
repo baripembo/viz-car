@@ -13,9 +13,9 @@
 
   <body>
 
-    <!-- <div class='ticker'>
+    <div class='ticker'>
       <p>0 steps walked. 0 km. 0 days.</p>
-    </div> -->
+    </div>
 
     <div id='map'></div>
 
@@ -33,6 +33,7 @@
         </div>
         <div class='main'>
           <section class='step' id='segment1'>
+            <h4>Segment 1</h4>
             <p>Mohamed is a 50-year-old married father of eight children ranging in age from 15 to 2 years. He lived peacefully with his family in the neighbourhood of Galabadja in Bangui’s 8th district; owned his home and ran a retail shop until the outbreak of violence on 5 December 2013.</p>
           </section>
 
@@ -74,12 +75,12 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-      </div>
-      <div class='video-container'>
-        <video controls>
-          <source src='assets/video.mp4' type='video/mp4'>
-          Your browser does not support the video tag.
-        </video>
+        <div class='col-12 video-container'>
+          <video id='droneVideo' controls muted='muted'>
+            <source src='assets/video.mp4' type='video/mp4'>
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
       <div class='grid-container'>
         <div class='col-12'>
@@ -104,8 +105,36 @@
 
     <footer>
       <div class='grid-container'>
+        <div class='col-8'>
+          <p>As of November 2018, over half the population of South Sudan relies on aid to survive. Some 8.7 million people are food-insecure, half  of them severely, and 26,000 people live in famine-like conditions. Some 1.97 million people are internally displaced, and 2.2 million South Sudanese are refugees in neighbouring countries.</p>
+          <h3><i>You can help. Your voice is your signature.</i></h3>
+          <p><a href='http://www.crowd360.org/internal-displacement-campaign-mission-statement' target='_blank'>Sign here</a> and call for action help to prevent and resolve internal displacement and protect those affected.</p>
+          <p>Find out more: <a href='http://www.gp20.org' target='_blank'>www.gp20.org</a><br>Learn more about the UN’s work in South Sudan: <a href='https://www.unocha.org/south-sudan' target='_blank'>www.unocha.org/south-sudan</a></p>
+        </div>
+        <div class='col-4'>
+          <ul class='stats'>
+            <li><span>916 km</span><br>Total distance</li>
+            <li><span>499,229 steps</span><br>Walking steps</li>
+            <li><span>205 days</span><br>Duration</li>
+          </ul>
+        </div>
         <div class='col-12'>
-          footer here
+          <p class='small'>Acknowledgements: This data story was developed by OCHA’s Centre for Humanitarian Data in The Hague through its Data Fellows Programme in partnership with the Education Above All Foundation. The Centre worked closely with OCHA South Sudan and OCHA’s policy and communications branches to develop the narrative and to ensure the figures and timeline are accurate. It also worked closely with the International Organization for Migration and the Internal Displacement Monitoring Centre on the data. The story is based on actual experiences of displaced people in South Sudan, although the name Angelina is fictional.</p>
+        </div>
+      </div>
+      <div class='logos'>
+        <div class='grid-container'>
+          <div class='col-12'>
+            <a href='https://educationaboveall.org' target='_blank'>
+              <img height='30' src='assets/logo-eaa-gray.png'>
+            </a>
+            <a href='https://www.unocha.org' target='_blank'>
+              <img height='30' src='assets/logo-ocha-gray.png'>
+            </a>
+            <a href='https://centre.humdata.org' target='_blank'>
+              <img height='38' src='assets/logo-centre-gray.png'>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -9,6 +9,7 @@ $( document ).ready(function() {
   let tickerArray = new Array(dataUrls.length);
   let map;
 
+  //set scroll gap between steps to be height of viewport
   $('.step').css('marginBottom', $(window).height());
 
   let narrative = $('#narrative'),
@@ -16,19 +17,19 @@ $( document ).ready(function() {
     currentSection = '';
     currentIndex = 1;
 
+  let narrativeHeight = narrative.outerHeight();
+  let sectionsHeight = $('#sections').height();
+  let articlePosition = sectionsHeight-$('article').outerHeight()-narrative.outerHeight();
   narrative.scroll(function(e) {
-    let narrativeHeight = narrative.outerHeight();
     let newSection = currentSection;
-    let sectionsHeight = $('#sections').height();
-    let articlePosition = sectionsHeight-$('article').outerHeight()-narrative.outerHeight();
 
     //show ticker
-    // if (narrative.scrollTop() >= $('.hero').outerHeight() && narrative.scrollTop() < articlePosition) {
-    //   $('.ticker').addClass('active');
-    // }
-    // else {
-    //   $('.ticker').removeClass('active');
-    // }
+    if (narrative.scrollTop() >= $('.hero').outerHeight()-200) {
+      $('.ticker').addClass('active');
+    }
+    else {
+      $('.ticker').removeClass('active');
+    }
 
     //show article
     if (narrative.scrollTop() > articlePosition) {
@@ -55,10 +56,28 @@ $( document ).ready(function() {
   });
 
 
-  function showArticle() {
-    $('#map').css('position', 'relative');
-    $('#map').css('height', window.innerHeight);
+  let videoContainer = document.querySelector('.video-container');
+  let vid = document.getElementById('droneVideo'); 
+  $(window).scroll(function(e) {
+    $('.ticker').removeClass('active');
+    
+    if (isScrolledIntoView(videoContainer)) vid.play();
+    else vid.pause();
+  });
+
+
+  function isScrolledIntoView(el) {
+    var rect = el.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    // Only completely visible elements return true:
+    //var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    // Partially visible elements return true:
+    isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    return isVisible;
   }
+
 
   function updateTicker(value) {
     $('.ticker p').animate({
@@ -72,7 +91,6 @@ $( document ).ready(function() {
       }, 400);
     });
   }
-
 
   function setSection(newSection) {
     // update map if id changed
@@ -97,7 +115,7 @@ $( document ).ready(function() {
       sections[i].className = sections[i].id === newSection ? 'active' : '';
     }
     currentSection = newSection;
-    map.setLayoutProperty('locationPoints', 'visibility', 'visible');
+    //map.setLayoutProperty('locationPoints', 'visibility', 'visible');
   }
 
 
@@ -106,7 +124,7 @@ $( document ).ready(function() {
     if (isMobile)
       map.fitBounds(bbox, {padding: {top: 40, bottom: 40, left: 0, right: 0}});
     else
-      map.fitBounds(bbox, {offset: [0,0], padding: padding});
+      map.fitBounds(bbox, {offset: [-100,0], padding: padding});
   }
 
 
@@ -131,7 +149,7 @@ $( document ).ready(function() {
       container: 'map',
       style: 'mapbox://styles/mapbox/satellite-v9',
       center: [20, 5.5],
-      zoom: 6.8,
+      zoom: 4,
       attributionControl: false
     });
 
@@ -168,13 +186,13 @@ $( document ).ready(function() {
       'type': 'symbol',
       'source': 'locationSource',
       'layout': {
-        'visibility': 'none',
+        //'visibility': 'none',
         'icon-image': '{icon}',
         'icon-size': { 'type': 'identity', 'property': 'iconSize' },
         'text-field': '{name}',
         'text-font': ['PT Sans Bold Italic', 'Arial Unicode MS Bold'],
         'text-size': 13,
-        'text-max-width': 8,
+        'text-max-width': { 'type': 'identity', 'property': 'textMaxWidth' },
         'text-justify': 'left',
         'text-offset': { 'type': 'identity', 'property': 'textOffset' },
         'text-anchor': { 'type': 'identity', 'property': 'textAnchor' },
@@ -223,7 +241,7 @@ $( document ).ready(function() {
     })
   }
 
-  let animation; // to store and cancel the animation
+  let animation; 
   let animationIndex = 0;
   let animationDone = true;
   function animateLine() {
@@ -236,7 +254,6 @@ $( document ).ready(function() {
       newGeo.features[0].geometry.coordinates.push(geoData.features[0].geometry.coordinates[count]);
       map.getSource(layer).setData(newGeo);
 
-      // Request the next frame of the animation.
       animation = requestAnimationFrame(function() {
         animateLine();
       });
@@ -259,21 +276,6 @@ $( document ).ready(function() {
     });
   }
 
-  function initSlideshows() {  
-    $('.slideshow').slick({
-      dots: true,
-      lazyLoad: 'progressive',
-    });
-
-    $('.slideshow .slick-slide > img').each(function(){ 
-      if ($(this).attr('title')){
-        var slideCaption = $(this).attr('title');
-        $(this).parent('.slick-slide').append('<div class="slide-caption">' + slideCaption + '</div>');
-      }
-    });
-  }
-
-  initSlideshows();
   initMap();
   initTracking();
 });

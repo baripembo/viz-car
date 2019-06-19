@@ -30,6 +30,10 @@
   grid-column: span 7;
 }
 
+.col-8 {
+  grid-column: span 8;
+}
+
 .col-12 {
   grid-column: span 12;
 }
@@ -47,6 +51,7 @@
   .col-5,
   .col-6,
   .col-7,
+  .col-8,
   .col-12 {
     grid-column: 1 / -1;
   }
