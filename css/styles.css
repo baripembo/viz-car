@@ -23,6 +23,9 @@
 .col-7 {
   grid-column: span 7; }
 
+.col-8 {
+  grid-column: span 8; }
+
 .col-12 {
   grid-column: span 12; }
 
@@ -36,6 +39,7 @@
   .col-5,
   .col-6,
   .col-7,
+  .col-8,
   .col-12 {
     grid-column: 1 / -1; } }
 
@@ -207,14 +211,14 @@ article {
 footer {
   background-color: #353535;
   color: #FFF;
-  padding: 50px 0; }
+  padding: 20px 0 0; }
+  footer .grid-container > div {
+    padding: 0 20px; }
 
 .stats {
   list-style-type: none;
   padding: 0;
-  margin-right: 20px;
-  text-align: right;
-  width: 40%; }
+  text-align: right; }
   .stats li {
     padding-bottom: 20px; }
   .stats span {
@@ -229,14 +233,8 @@ footer {
     margin-left: 40px;
     margin-bottom: 0;
     width: auto; }
-  .logos div {
-    display: flex;
-    flex-flow: row;
-    margin: 0 auto;
-    max-width: 1024px;
-    padding-right: 20px; }
-    .logos div > *:first-child {
-      margin-left: auto; }
+  .logos .grid-container > div {
+    text-align: right; }
 
 .title {
   text-align: center; }
@@ -262,7 +260,8 @@ h3 {
 h4 {
   font-size: 15px;
   line-height: 20px;
-  margin-top: 4px; }
+  margin-top: 4px;
+  margin-bottom: 10px; }
 
 p {
   margin: 0;
@@ -278,13 +277,13 @@ a {
   color: #888;
   font-size: 11px;
   line-height: 13px;
-  padding: 0 20px; }
+  padding: 0; }
 
 label {
   color: #FFF;
   text-transform: uppercase; }
 
-.video-container video {
+video {
   height: auto;
   margin: 20px 0;
   width: 100%; }
@@ -302,5 +301,10 @@ label {
   img.full-width {
     height: auto;
     width: 100%; }
-  footer {
-    padding: 50px 20px; } }
+  .stats {
+    text-align: left; }
+  .logos .grid-container > div {
+    padding: 0;
+    text-align: center; }
+  .logos img {
+    margin: 10px; } }

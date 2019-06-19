@@ -6,7 +6,8 @@
       "properties": {
         "name": "section5",
         "method": "walking",
-        "length": 2.3
+        "length": 2.3,
+        "ticker":"Section 5: X steps walked. X km. X days."
       },
       "geometry": {
         "type": "LineString",

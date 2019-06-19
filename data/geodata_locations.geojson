@@ -8,7 +8,8 @@
         "icon": "icon_start",
         "iconSize": 1,
         "textAnchor": "left",
-        "textOffset": [1, 0]
+        "textOffset": [1, 0],
+        "textMaxWidth": 8
       },
       "geometry": {
         "type": "Point",
@@ -25,7 +26,8 @@
         "icon": "icon_middle",
         "iconSize": 0.75,
         "textAnchor": "left",
-        "textOffset": [1, 0]
+        "textOffset": [1, 0],
+        "textMaxWidth": 8
       },
       "geometry": {
         "type": "Point",
@@ -42,7 +44,8 @@
         "icon": "icon_middle",
         "iconSize": 0.75,
         "textAnchor": "right",
-        "textOffset": [-1, 0]
+        "textOffset": [-1, 0],
+        "textMaxWidth": 8
       },
       "geometry": {
         "type": "Point",
@@ -55,11 +58,30 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "The family left Bangui with a deep breath of relief, heading to the town of Bambari. This glimmer of hope was soon shattered when the convoy is attacked by armed men in the town of Sibut.",
+        "icon": "",
+        "iconSize": 0,
+        "textAnchor": "left",
+        "textOffset": [1, 0],
+        "textMaxWidth": 11
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19,
+          5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Bornou Mosque IDP Site",
         "icon": "icon_middle",
         "iconSize": 0.75,
         "textAnchor": "left",
-        "textOffset": [-0.5, 2]
+        "textOffset": [-0.5, 2],
+        "textMaxWidth": 8
       },
       "geometry": {
         "type": "Point",
@@ -72,11 +94,30 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Mohamed and his family had never been to Bambari until now. They were registered by aid workers and became eligible for multi-sectorial assistance.",
+        "icon": "",
+        "iconSize": 0,
+        "textAnchor": "left",
+        "textOffset": [0, 0],
+        "textMaxWidth": 15
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20,
+          5.6
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "PK3 IDP Site",
         "icon": "icon_middle",
         "iconSize": 0.75,
         "textAnchor": "left",
-        "textOffset": [1, 0]
+        "textOffset": [1, 0],
+        "textMaxWidth": 8
       },
       "geometry": {
         "type": "Point",
@@ -89,12 +130,31 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "They planned an exit strategy. The family grabbed few personal belongings and walked to Bria town. They slept in bushes, exposed to torrential rainfall and mosquitos.",
+        "icon": "",
+        "iconSize": 0,
+        "textAnchor": "left",
+        "textOffset": [0, 0],
+        "textMaxWidth": 15
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4,
+          6.15
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Bornou neighborhood",
         "icon": "icon_middle",
         "iconSize": 0.75,
         "textAnchor": "left",
         "textAnchor": "right",
-        "textOffset": [-1, 0]
+        "textOffset": [-1, 0],
+        "textMaxWidth": 8
       },
       "geometry": {
         "type": "Point",
