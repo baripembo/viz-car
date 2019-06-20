@@ -5,10 +5,7 @@
       "type": "Feature",
       "properties": {
         "name": "section3",
-        "surface": "unpaved",
-        "length": 197.7,
-        "method": "bus",
-        "ticker":"Section 3: X steps walked. X km. X days."
+        "ticker":"197.7 km."
       },
       "geometry": {
         "type": "LineString",
