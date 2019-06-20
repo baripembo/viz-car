@@ -210,7 +210,7 @@ $( document ).ready(function() {
     countArray[index] = 0;
     geoDataArray[index] = geoData;
     tickerArray[index] = geoData.features[0].properties.ticker;
-    let name = geoData.features[0].properties.name.replace(/ /g, '').toLowerCase()
+    //let name = geoData.features[0].properties.name.replace(/ /g, '').toLowerCase()
     let layer = 'layer'+index;
     let geo = {
       'type': 'FeatureCollection',
