@@ -150,7 +150,7 @@ article {
 
 .slideshow {
 	margin: 40px auto 0;
-	width: 60%;
+	width: 75%;
 	.slick-dots {
 		bottom: -15px;
 		li {
@@ -230,7 +230,9 @@ h2 {
   border-top: 1px solid #666;
   display: inline-block;
   font-style: italic;
+  line-height: 26px;
   padding: 20px 50px 0;
+  margin-top: 50px;
 }
 h3 {
 	font-size: 18px;
@@ -272,6 +274,9 @@ video {
 
 
 @media only screen and (max-width: 767px) {
+	h2 {
+		padding: 20px 0 0;
+	}
 	.hero {
 		.container {
 			width: 85%;
@@ -291,6 +296,24 @@ video {
 	img.full-width {
 		height: auto;
 		width: 100%;
+	}
+	video + p.small {
+		padding-left: 20px;
+	}
+	.slideshow {
+		width: 100%;
+		.slide-caption {
+			padding-left: 20px;
+		}
+		.slick-dots {
+			bottom: -20px;
+		}
+	}
+	footer {
+		.stats,
+		p.small {
+			padding: 0 20px;
+		}
 	}
 	.logos {
 		.grid-container > div {
