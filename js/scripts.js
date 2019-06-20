@@ -147,9 +147,9 @@ $( document ).ready(function() {
   function initMap() {
     map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/satellite-v9',
+      style: 'mapbox://styles/hsw98/cjx44orzy51b21cqttgaolgq0',//mapbox://styles/mapbox/satellite-v9',
       center: [20, 5.5],
-      zoom: 4,
+      zoom: 6,
       attributionControl: false
     });
 
@@ -210,7 +210,7 @@ $( document ).ready(function() {
     countArray[index] = 0;
     geoDataArray[index] = geoData;
     tickerArray[index] = geoData.features[0].properties.ticker;
-    let name = geoData.features[0].properties.name.replace(/ /g, '').toLowerCase()
+    //let name = geoData.features[0].properties.name.replace(/ /g, '').toLowerCase()
     let layer = 'layer'+index;
     let geo = {
       'type': 'FeatureCollection',
