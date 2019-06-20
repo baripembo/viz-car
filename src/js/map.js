@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 $( document ).ready(function() {
 
   const DATA_URL = '';
@@ -191,7 +195,7 @@ $( document ).ready(function() {
         'icon-size': { 'type': 'identity', 'property': 'iconSize' },
         'text-field': '{name}',
         'text-font': ['PT Sans Bold Italic', 'Arial Unicode MS Bold'],
-        'text-size': 13,
+        'text-size': 14,
         'text-max-width': { 'type': 'identity', 'property': 'textMaxWidth' },
         'text-justify': 'left',
         'text-offset': { 'type': 'identity', 'property': 'textOffset' },
@@ -210,7 +214,6 @@ $( document ).ready(function() {
     countArray[index] = 0;
     geoDataArray[index] = geoData;
     tickerArray[index] = geoData.features[0].properties.ticker;
-    //let name = geoData.features[0].properties.name.replace(/ /g, '').toLowerCase()
     let layer = 'layer'+index;
     let geo = {
       'type': 'FeatureCollection',
@@ -236,9 +239,9 @@ $( document ).ready(function() {
       },
       'paint': {
         'line-color': '#FFF',
-        'line-width': 2
+        'line-width': 3
       }
-    })
+    }, 'locationPoints')
   }
 
   let animation; 
@@ -276,6 +279,21 @@ $( document ).ready(function() {
     });
   }
 
+  function initSlideshows() {
+    $('.slideshow').slick({
+      dots: true,
+      lazyLoad: 'progressive',
+    });
+
+    $('.slideshow .slick-slide img').each(function(){ 
+      if ($(this).attr('title')){
+        var slideCaption = $(this).attr('title');
+        $(this).parent().append('<div class="slide-caption">' + slideCaption + '</div>');
+      }
+    });
+  }
+
+  initSlideshows();
   initMap();
   initTracking();
 });

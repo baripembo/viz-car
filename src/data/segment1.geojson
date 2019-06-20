@@ -7,7 +7,7 @@
         "name": "section1",
         "length": "5.500000",
         "method": "walking",
-        "ticker":"Section 1: X steps walked. X km. X days."
+        "ticker":"8,525 steps walked. 5.5 km."
       },
       "geometry": {
         "type": "LineString",

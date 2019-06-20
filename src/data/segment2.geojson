@@ -5,19 +5,7 @@
       "type": "Feature",
       "properties": {
       	"name": "section2",
-        "osm_id": "329423527",
-        "name": null,
-        "highway": "primary",
-        "surface": "asphalt",
-        "smoothness": null,
-        "width": null,
-        "lanes": null,
-        "oneway": null,
-        "bridge": null,
-        "layer": null,
-        "z_index": "7",
-        "length": 171.99,
-        "ticker":"Section 1: X steps walked. X km. X days."
+        "ticker":"181.4 km."
       },
       "geometry": {
         "type": "LineString",

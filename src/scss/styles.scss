@@ -22,22 +22,7 @@ body {
 	width: 100%;
 }
 
-.arrow {
-	position: absolute;
-	bottom: 10px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-.arrow img {
-	margin: 0;
-	width: 25px;
-}
-
 .hero {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100vh;
   min-height: 590px;
   overflow-y: scroll;
@@ -52,13 +37,14 @@ body {
 	  width: 45%;
 	}
 	.header {
+		border-bottom: 1px solid #CCC;
 		margin-bottom: 50px;
-		text-align: left;
-		p {
-			color: #FFF;
-			font-size: 16px;
-			line-height: 23px;
-		}
+		text-align: center;
+	}
+	p {
+		color: #FFF;
+		font-size: 16px;
+		line-height: 23px;
 	}
 }
 
@@ -123,7 +109,7 @@ hr {
 }
 
 .main {
-  padding-top: 30px;
+  padding-top: 150px;
   display: flex;
   flex-flow: column;
 	section {
@@ -157,11 +143,14 @@ hr {
 
 article {
 	margin: 50px 0;
+	img {
+		width: 100%;
+	}
 }
 
 .slideshow {
-	margin-left: 24px;
-	margin-top: 40px;
+	margin: 40px auto 0;
+	width: 60%;
 	.slick-dots {
 		bottom: -15px;
 		li {
@@ -196,18 +185,15 @@ article {
 footer {
 	background-color: #353535;
 	color: #FFF;
-	padding: 20px 0 0;
-	.grid-container > div {
-		padding: 0 20px;
-	}
+	padding: 30px 0 0;
 }
 
 .stats {
+	display: flex;
   list-style-type: none;
 	padding: 0;
-	text-align: right;
 	li {
-		padding-bottom: 20px;
+		padding-right: 40px;
 	}
 	span {
 		font-size: 30px;
@@ -217,7 +203,7 @@ footer {
 
 .logos {
 	background-color: #252525;
-	margin-top: 20px;
+	margin-top: 30px;
 	padding: 18px 20px 9px;
 	img {
 		margin-left: 40px;
@@ -235,7 +221,7 @@ footer {
 
 h1 {
 	color: #FFF;
-	font-size: 40px;
+	font-size: 38px;
 	font-weight: 700;
 	line-height: 50px;
 	margin: 10px 0 20px;
@@ -280,7 +266,7 @@ label {
 }
 video {
 	height: auto;
-	margin: 20px 0;
+	margin: 20px 0 0;
 	width: 100%;
 }
 
@@ -305,9 +291,6 @@ video {
 	img.full-width {
 		height: auto;
 		width: 100%;
-	}
-	.stats {
-		text-align: left;
 	}
 	.logos {
 		.grid-container > div {

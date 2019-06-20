@@ -8,7 +8,7 @@
         "surface": "unpaved",
         "length": 206.6,
         "method": "walking",
-        "ticker":"Section 4: X steps walked. X km. X days."
+        "ticker":"320,230 steps walked. 206.6 km."
       },
       "geometry": {
         "type": "LineString",
