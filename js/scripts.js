@@ -15,6 +15,7 @@ $( document ).ready(function() {
 
   //set scroll gap between steps to be height of viewport
   $('.step').css('marginBottom', $(window).height());
+  $('article').css('marginTop', $(window).height());
 
   let narrative = $('#narrative'),
     sections = narrative.find('section'),
@@ -39,12 +40,12 @@ $( document ).ready(function() {
     if (narrative.scrollTop() > articlePosition) {
       $('#map').addClass('unpin');
       $('#map').css('height', $(window).height());
-      $('footer').show();
+      $('article').css('marginTop', '0px');
     }
     else {
       $('#map').removeClass('unpin');
       $('#map').css('height', 'auto');
-      $('footer').hide();
+      $('article').css('marginTop', $(window).height());
     }
     
     //detect current section in view
@@ -126,7 +127,7 @@ $( document ).ready(function() {
   function setMapBounds(points, padding) {
     let bbox = turf.extent(points);
     if (isMobile)
-      map.fitBounds(bbox, {padding: {top: 40, bottom: 40, left: 0, right: 0}});
+      map.fitBounds(bbox, {padding: {top: 80, bottom: 80, left: 60, right: 60}});
     else
       map.fitBounds(bbox, {offset: [-100,0], padding: padding});
   }
