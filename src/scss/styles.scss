@@ -150,8 +150,11 @@ article {
 }
 
 .slideshow {
-	margin: 40px auto 0;
+	margin: 0 auto;
 	width: 75%;
+	img {
+		margin-top: 0;
+	}
 	.slick-dots {
 		bottom: -15px;
 		li {
