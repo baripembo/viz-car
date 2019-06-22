@@ -6,9 +6,9 @@
       "properties": {
         "name": "Galabadja, Bangui",
         "icon": "icon_start",
-        "iconSize": 1,
+        "iconSize": 0.3,
         "textAnchor": "left",
-        "textOffset": [1.5, 0],
+        "textOffset": [1, 0],
         "textMaxWidth": 8
       },
       "geometry": {
@@ -24,7 +24,7 @@
       "properties": {
         "name": "Bangui Central Mosque",
         "icon": "icon_middle",
-        "iconSize": 1,
+        "iconSize": 0.25,
         "textAnchor": "left",
         "textOffset": [1, 0],
         "textMaxWidth": 8
@@ -42,7 +42,7 @@
       "properties": {
         "name": "Sibut",
         "icon": "icon_middle",
-        "iconSize": 1,
+        "iconSize": 0.25,
         "textAnchor": "right",
         "textOffset": [-1, 0],
         "textMaxWidth": 8
@@ -60,7 +60,7 @@
       "properties": {
         "name": "Bornou Mosque IDP Site",
         "icon": "icon_middle",
-        "iconSize": 1,
+        "iconSize": 0.25,
         "textAnchor": "left",
         "textOffset": [-0.5, 2],
         "textMaxWidth": 8
@@ -78,7 +78,7 @@
       "properties": {
         "name": "PK3 IDP Site",
         "icon": "icon_middle",
-        "iconSize": 1,
+        "iconSize": 0.25,
         "textAnchor": "left",
         "textOffset": [1, 0],
         "textMaxWidth": 8
@@ -96,7 +96,7 @@
       "properties": {
         "name": "Bornou neighborhood",
         "icon": "icon_middle",
-        "iconSize": 1,
+        "iconSize": 0.25,
         "textAnchor": "left",
         "textAnchor": "right",
         "textOffset": [-1.5, 0],
@@ -105,8 +105,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.98937177658081,
-          6.553342859920623
+          21.989264488220215,
+          6.553492082176923
         ]
       }
     }
