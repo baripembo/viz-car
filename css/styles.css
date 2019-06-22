@@ -24,7 +24,7 @@
   grid-column: span 7; }
 
 .col-8 {
-  grid-column: span 8; }
+  grid-column: 3 / span 8; }
 
 .col-12 {
   grid-column: span 12; }
@@ -167,6 +167,7 @@ hr {
 article {
   margin: 50px 0; }
   article img {
+    margin-top: 20px;
     width: 100%; }
 
 .slideshow {
@@ -219,6 +220,7 @@ footer {
   .logos img {
     margin-left: 40px;
     margin-bottom: 0;
+    vertical-align: top;
     width: auto; }
   .logos .grid-container > div {
     text-align: right; }
@@ -228,7 +230,7 @@ footer {
 
 h1 {
   color: #FFF;
-  font-size: 38px;
+  font-size: 31px;
   font-weight: 700;
   line-height: 50px;
   margin: 10px 0 20px; }
@@ -242,12 +244,12 @@ h2 {
   margin-top: 50px; }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 21px; }
+  line-height: 26px; }
 
 h4 {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 20px;
   margin-top: 4px;
   margin-bottom: 10px; }
@@ -299,7 +301,10 @@ video {
     .slideshow .slide-caption {
       padding-left: 20px; }
     .slideshow .slick-dots {
-      bottom: -20px; }
+      bottom: -30px; }
+  .slick-prev,
+  .slick-next {
+    display: none; }
   footer .stats,
   footer p.small {
     padding: 0 20px; }
@@ -307,4 +312,8 @@ video {
     padding: 0;
     text-align: center; }
   .logos img {
-    margin: 10px; } }
+    margin: 10px; }
+  .stats {
+    flex-flow: column; }
+    .stats li {
+      margin-bottom: 20px; } }

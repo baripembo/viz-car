@@ -6,7 +6,7 @@
       "properties": {
         "name": "Galabadja, Bangui",
         "icon": "icon_start",
-        "iconSize": 1.5,
+        "iconSize": 1,
         "textAnchor": "left",
         "textOffset": [1.5, 0],
         "textMaxWidth": 8
